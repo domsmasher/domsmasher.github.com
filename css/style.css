@@ -9,6 +9,17 @@ body {
 }
 
 
+/******************************************************************
+
+MODULE CSS
+
+******************************************************************/
+
+.hero-unit {
+    background: none;
+    text-align: center;
+    text-shadow: 5px 5px 10px #000;
+}
 
 /******************************************************************
 
@@ -18,4 +29,8 @@ FONTS CSS
 
 .brand {
     font-family: 'Nosifer', cursive;   
+}
+
+.hero-unit h1 {
+    font-family: 'Josefin Slab', serif; 
 }
