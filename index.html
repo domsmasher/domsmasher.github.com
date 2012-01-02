@@ -39,7 +39,15 @@
                     <a class="brand" href="#">DOM Smasher</a>
                     <ul class="nav">
                         <li><a href="#overview">Overview</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">About Me</a></li>
+                    </ul>
+                    <ul class="nav secondary-nav">
+                        <li class="dropdown" data-dropdown="dropdown">
+                            <a href="#" class="dropdown-toggle">Projects</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Dojo Toolkit</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -49,26 +57,40 @@
         <div class="container">
             <!-- Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
-                <h1>Hello, world!</h1>
+                <h1>DOM Experiment!!!</h1>
                 <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             </div>
     
             <!-- Example row of columns -->
-            <div class="row">
+            <div class="row tool">
                 <div class="span-one-third">
-                    <h2>Heading</h2>
-                    <p>Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                    <div class="tool-item">
+                        <a href="http://twitter.github.com/bootstrap/" target="_blank">
+                            <img src="images/cloud9ide.png" alt="Cloud9 IDE" />
+                            <strong>Cloud9 IDE</strong><br />
+                            It's simply AWESOME!!! You can edit your github projects everywhere and
+                            without opening the shell (ugly monster!!!).
+                        </a>
+                    </div>
                 </div>
                 <div class="span-one-third">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                    <div class="tool-item">
+                        <a href="https://github.com/" target="_blank">
+                            <img src="images/github.png" alt="github" />
+                            <strong>github</strong><br />
+                            Every developer knows this powerful and amazing toy, I've nothing to add...
+                        </a>
+                    </div>
                 </div>
                 <div class="span-one-third">
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
+                    <div class="tool-item">
+                        <a href="http://twitter.github.com/bootstrap/" target="_blank">
+                        <img src="images/bootstrap.png" alt="Bootstrap" />
+                        <strong>Bootstrap, from Twitter</strong><br />
+                        A toolkit from Twitter designed to kickstart development of webapps and sites. It's good but
+                        can do better...
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,5 +98,6 @@
 <!-- JavaScript at the bottom for fast page loading -->
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="./js/bootstrap/bootstrap-dropdown.js"></script>
 </body>
 </html>
