@@ -7,3 +7,15 @@ BASE CSS
 body {
     background: url(../images/bg_body.png) repeat 0 0;
 }
+
+
+
+/******************************************************************
+
+FONTS CSS
+
+******************************************************************/
+
+.brand {
+    font-family: 'Niconne', cursive;   
+}
