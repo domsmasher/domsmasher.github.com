@@ -4,10 +4,81 @@ BASE CSS
 
 ******************************************************************/
 
+html,
+body { 
+    -webkit-transition: all 2s ease-out;  /* Saf3.2+, Chrome */
+    -moz-transition: all 2s ease-out;  /* FF4+ */
+    -ms-transition: all 2s ease-out;  /* IE10? */
+    -o-transition: all 2s ease-out;  /* Opera 10.5+ */
+    transition: all 2s ease-out;
+}
+
 body {
     background: url(../images/bg_body.png) repeat 0 0;
 }
 
+section {
+    padding-top: 60px;
+    min-height: 650px;
+}
+
+figure {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 14px #000; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 0px 14px #000; /* FF3.5 - 3.6 */
+    box-shadow: 0px 0px 14px #000;
+    -webkit-transform: rotate(-7.5deg);  /* Saf3.1+, Chrome */
+    -moz-transform: rotate(-7.5deg);  /* FF3.5+ */
+    -ms-transform: rotate(-7.5deg);  /* IE9 */
+    -o-transform: rotate(-7.5deg);  /* Opera 10.5 */
+    transform: rotate(-7.5deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
+                     M11=0.9914448613738104, M12=-0.13052619222005157,M21=0.13052619222005157, M22=0.9914448613738104, sizingMethod='auto expand');
+    zoom: 1;
+    -webkit-transition: all 0.7s ease-out;  /* Saf3.2+, Chrome */
+    -moz-transition: all 0.7s ease-out;  /* FF4+ */
+    -ms-transition: all 0.7s ease-out;  /* IE10? */
+    -o-transition: all 0.7s ease-out;  /* Opera 10.5+ */
+    transition: all 0.7s ease-out;
+    opacity: 0.8; /* Chrome 4+, FF2+, Saf3.1+, Opera 9+, IE9, iOS 3.2+, Android 2.1+ */
+    filter: alpha(opacity=80); /* IE6-IE8 */
+}
+
+figure:hover {
+    opacity: 1; /* Chrome 4+, FF2+, Saf3.1+, Opera 9+, IE9, iOS 3.2+, Android 2.1+ */
+    filter: alpha(opacity=100); /* IE6-IE8 */
+    -webkit-transform: rotate(0deg);  /* Saf3.1+, Chrome */
+    -moz-transform: rotate(0deg);  /* FF3.5+ */
+    -ms-transform: rotate(0deg);  /* IE9 */
+    -o-transform: rotate(0deg);  /* Opera 10.5 */
+    transform: rotate(0deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(/* IE6–IE9 */
+                     M11=0.9914448613738104, M12=-0.13052619222005157,M21=0.13052619222005157, M22=0.9914448613738104, sizingMethod='auto expand');
+}
+
+figure img {
+    border: 1px solid #000;
+}
+
+/******************************************************************
+
+LAYOUT CSS
+
+******************************************************************/
+
+#about-project {
+    background: url(../images/bg_brownnoise.png) repeat 0 0;
+}
+
+#about-me {
+    background: url(../images/bg_blacknoise.png) repeat 0 0;
+}
 
 /******************************************************************
 
@@ -18,6 +89,11 @@ MODULE CSS
 .hero-unit {
     background: none;
     text-align: center;
+    margin-bottom: 0;
+}
+
+.hero-unit h1 {
+    margin-bottom: 20px;
 }
 
 .hero-unit p {
@@ -27,6 +103,10 @@ MODULE CSS
 }
 
 .tool {}
+
+.tool > h1 {
+    padding: 15px;
+}
 
 .tool-item {
     padding: 15px;
@@ -75,7 +155,13 @@ FONTS CSS
     font-family: 'Josefin Slab', serif;
     color: #fff;
     text-shadow: 5px 5px 10px #000;
-    margin-top: 40px;
+}
+
+#about-project h1,
+#about-project p,
+#about-project a,
+#about-project div {
+    color: #fff;
 }
 
 
