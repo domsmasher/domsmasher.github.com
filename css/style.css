@@ -4,14 +4,6 @@ BASE CSS
 
 ******************************************************************/
 
-html,
-body { 
-    -webkit-transition: all 2s ease-out;  /* Saf3.2+, Chrome */
-    -moz-transition: all 2s ease-out;  /* FF4+ */
-    -ms-transition: all 2s ease-out;  /* IE10? */
-    -o-transition: all 2s ease-out;  /* Opera 10.5+ */
-    transition: all 2s ease-out;
-}
 
 body {
     background: url(../images/bg_body.png) repeat 0 0;
@@ -64,6 +56,15 @@ figure:hover {
 
 figure img {
     border: 1px solid #000;
+}
+
+figcaption {
+    color: #000 !important;
+}
+
+footer {
+    border: none;
+    padding-bottom: 20px;
 }
 
 /******************************************************************
@@ -141,6 +142,11 @@ MODULE CSS
     text-decoration: none;
 }
 
+.legal {
+    text-align: center;
+    padding: 10px;
+}
+
 /******************************************************************
 
 FONTS CSS
@@ -157,10 +163,11 @@ FONTS CSS
     text-shadow: 5px 5px 10px #000;
 }
 
-#about-project h1,
-#about-project p,
-#about-project a,
-#about-project div {
+figcaption {
+    font-family: 'Nosifer', serif;
+}
+#about-project *,
+#about-me * {
     color: #fff;
 }
 
