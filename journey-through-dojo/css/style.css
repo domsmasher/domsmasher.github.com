@@ -3,7 +3,7 @@
    ========================================================================== */
    
     body {
-        background-color: #404040;
+        background: #404040 url(../images/bg_darkgreynoise.png) repeat 0 0;
         color: #fff;
     }
    
