@@ -22,9 +22,10 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
     <!-- CSS: implied media=all -->
     <!-- CSS concatenated and minified via ant build script-->
-    <link href='http://fonts.googleapis.com/css?family=Nosifer|Josefin+Slab' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nosifer|Josefin+Slab|Iceland' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/prettify.css" />
     <!-- end CSS-->
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,16 +33,50 @@
 </head>
 
 <body>
-<header class="topnav">
-    <div class="container">
-        <div class="row clearfix">
-            <div class="grid_12"><a class="topnav-brand" href="#">DOM Smasher</a></div>
+<div id="container">
+    <header class="topnav">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="grid_12"><a class="topnav-brand" href="#">DOM Smasher</a></div>
+            </div>
         </div>
+    </header>
+    
+    <div id="main" role="main">
+    
+        <div class="container">
+            <div class="row clearfix">
+                <div class="push_2 grid_8 padding_bottom_120">
+                    <div id="home-slides">
+                        <div class="slides_container">
+                            <div class="item">
+                                <h1>Day 1</h1>
+                                <p><strong>Mission:</strong> Try <span class="object-name">dojox.image.SlideShow</span></p>
+                                <p><strong>Result:</strong> <span class="object-error">EPIC FAIL!</span></p>
+                                <p><strong>My code:</strong></p>
+                                <pre class="prettyprint lang-js">
+                                
+dojo.require("dojox.image.SlideShow");
+                                </pre>
+                                <a href="./day-1/images/day-1-result.jpg" target="_blank"><img src="./day-1/images/day-1-result.jpg" alt="Result: EPIC FAIL!" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
     </div>
-</header>
+    
+    <footer>
+    </footer>
+</div> <!--! end of #container -->
 
 
 <!-- JavaScript at the bottom for fast page loading -->
-<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.1/dojo/dojo.js" type="text/javascript"></script>
+<script data-dojo-config="parseOnLoad: true" src="http://ajax.googleapis.com/ajax/libs/dojo/1.7.1/dojo/dojo.js" type="text/javascript"></script>
+<script src="./js/app.js" type="text/javascript"></script>
+<script src="./js/prettify/prettify.js" type="text/javascript"></script>
 </body>
 </html>

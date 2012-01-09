@@ -1,12 +1,16 @@
 /* =============================================================================
    Base
    ========================================================================== */
-   
     body {
         background: #404040 url(../images/bg_darkgreynoise.png) repeat 0 0;
         color: #fff;
     }
-   
+
+    pre {
+        background-color: #fff;
+        padding: 10px !important;
+    }
+       
    
 /* =============================================================================
    Module
@@ -50,6 +54,26 @@
         color:#ffffff;
         text-decoration:none;
     }
+    
+    #home-slides {
+        margin-top: 160px;
+        -webkit-box-shadow: 3px 3px 140px #ccc; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+        -moz-box-shadow: 3px 3px 140px #ccc; /* FF3.5 - 3.6 */
+        box-shadow: 3px 3px 140px #ccc; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+    }
+    
+    .slides_container {}
+    
+    .slides_container .item {
+        position: relative;
+        border: 10px solid #fff;
+        padding: 10px;
+        
+    }
+    
+    .item img {
+        max-width: 100%;
+    }
    
 /* =============================================================================
    State
@@ -63,4 +87,16 @@
    ========================================================================== */ 
     .topnav-brand {
         font-family: 'Nosifer', cursive;
+    }
+    
+    #home-slides h1 {
+        font-family: 'Iceland', cursive;
+    }
+    
+    .object-name {
+        color: #e4c652;
+    }
+    
+    .object-error {
+        color: #f00;
     }
