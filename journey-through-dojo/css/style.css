@@ -3,12 +3,13 @@
    ========================================================================== */
     body {
         background: #404040 url(../images/bg_darkgreynoise.png) repeat 0 0;
-        color: #fff;
+        color: #000;
     }
 
     pre {
         background-color: #fff;
         padding: 10px !important;
+        color: #000  !important;
     }
        
    
@@ -85,6 +86,10 @@
 /* =============================================================================
    Typography
    ========================================================================== */ 
+    .item {
+        color: #fff;
+    }
+   
     .topnav-brand {
         font-family: 'Nosifer', cursive;
     }
