@@ -1,0 +1,51 @@
+/****
+GRID SYSTEM MAGIC
+****/
+
+.wrapper {
+	width: @wrapperWidth + @gridGutterWidth;
+	margin: 0 auto;
+}
+
+.row {
+	width: @wrapperWidth;
+	margin-left: @extraSpace;
+	margin-right: @extraSpace;
+}
+
+.columns(@columnNumber: 1) {
+  width: (@gridColWidth * @columnNumber) + (@gridGutterWidth * (@columnNumber - 1));
+}
+
+.span_1,
+.span_2,
+.span_3,
+.span_4,
+.span_5,
+.span_6,
+.span_7,
+.span_8,
+.span_9,
+.span_10,
+.span_11,
+.span_12 {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: @extraSpace;
+	margin-right: @extraSpace;
+}
+
+// Default columns
+.span_1 { .columns(1); }
+.span_2 { .columns(2); }
+.span_3 { .columns(3); }
+.span_4 { .columns(4); }
+.span_5 { .columns(5); }
+.span_6 { .columns(6); }
+.span_7 { .columns(7); }
+.span_8 { .columns(8); }
+.span_9 { .columns(9); }
+.span_10 { .columns(10); }
+.span_11 { .columns(11); }
+.span_12 { .columns(12); }
