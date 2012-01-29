@@ -1,5 +1,9 @@
+@pixelvar: 0px;
+@percvar: 0%;
 @gridNumCols: 12;
-@gridColWidth: 60px;
-@gridGutterWidth: 20px;
-@extraSpace: (@gridGutterWidth / 2);
+@gridColWidth: 60;
+@gridGutterWidth: 20;
+@extraSpace: (@gridGutterWidth / 2) + @pixelvar;
 @wrapperWidth: (@gridNumCols * @gridColWidth) + (@gridGutterWidth * (@gridNumCols - 1));
+@spanFluidSpace: (@gridColWidth / (@wrapperWidth + @gridGutterWidth)) * 100;
+@gutterFluidSpace: (@gridGutterWidth / (@wrapperWidth + @gridGutterWidth)) * 100;

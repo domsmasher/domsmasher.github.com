@@ -391,15 +391,25 @@ table {
 /****
 GRID SYSTEM MAGIC
 ****/
-.wrapper {
-  width: 960px;
-  margin: 0 auto;
-}
 .row {
-  width: 940px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960;
+  zoom: 1;
 }
+.row:before, .row:after {
+  display: table;
+  content: "";
+  zoom: 1;
+}
+.row:after {
+  clear: both;
+}
+/****
+
+FIXED
+
+****/
 .span_1,
 .span_2,
 .span_3,
@@ -411,7 +421,18 @@ GRID SYSTEM MAGIC
 .span_9,
 .span_10,
 .span_11,
-.span_12 {
+.span_12,
+.span_13,
+.span_14,
+.span_15,
+.span_16,
+.span_17,
+.span_18,
+.span_20,
+.span_21,
+.span_22,
+.span_23,
+.span_24 {
   display: inline;
   float: left;
   position: relative;
@@ -453,4 +474,202 @@ GRID SYSTEM MAGIC
 }
 .span_12 {
   width: 940px;
+}
+.span_13 {
+  width: 1020px;
+}
+.span_14 {
+  width: 1100px;
+}
+.span_15 {
+  width: 1180px;
+}
+.span_16 {
+  width: 1260px;
+}
+.span_17 {
+  width: 1340px;
+}
+.span_18 {
+  width: 1420px;
+}
+.span_19 {
+  width: 1500px;
+}
+.span_20 {
+  width: 1580px;
+}
+.span_21 {
+  width: 1660px;
+}
+.span_22 {
+  width: 1740px;
+}
+.span_23 {
+  width: 1820px;
+}
+.span_24 {
+  width: 1900px;
+}
+/****
+
+FLUID
+
+****/
+.fluid-layout .span_1,
+.fluid-layout .span_2,
+.fluid-layout .span_3,
+.fluid-layout .span_4,
+.fluid-layout .span_5,
+.fluid-layout .span_6,
+.fluid-layout .span_7,
+.fluid-layout .span_8,
+.fluid-layout .span_9,
+.fluid-layout .span_10,
+.fluid-layout .span_11,
+.fluid-layout .span_12,
+.fluid-layout .span_13,
+.fluid-layout .span_14,
+.fluid-layout .span_15,
+.fluid-layout .span_16,
+.fluid-layout .span_17,
+.fluid-layout .span_18,
+.fluid-layout .span_20,
+.fluid-layout .span_21,
+.fluid-layout .span_22,
+.fluid-layout .span_23,
+.fluid-layout .span_24 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.fluid-layout .span_1 {
+  width: 6.25%;
+}
+.fluid-layout .span_2 {
+  width: 14.583333333333332%;
+}
+.fluid-layout .span_3 {
+  width: 22.916666666666664%;
+}
+.fluid-layout .span_4 {
+  width: 31.25%;
+}
+.fluid-layout .span_5 {
+  width: 39.58333333333333%;
+}
+.fluid-layout .span_6 {
+  width: 47.916666666666664%;
+}
+.fluid-layout .span_7 {
+  width: 56.25%;
+}
+.fluid-layout .span_8 {
+  width: 64.58333333333333%;
+}
+.fluid-layout .span_9 {
+  width: 72.91666666666666%;
+}
+.fluid-layout .span_10 {
+  width: 81.25%;
+}
+.fluid-layout .span_11 {
+  width: 89.58333333333333%;
+}
+.fluid-layout .span_12 {
+  width: 97.91666666666666%;
+}
+.fluid-layout .span_13 {
+  width: 106.25%;
+}
+.fluid-layout .span_14 {
+  width: 114.58333333333333%;
+}
+.fluid-layout .span_15 {
+  width: 122.91666666666666%;
+}
+.fluid-layout .span_16 {
+  width: 131.25%;
+}
+.fluid-layout .span_17 {
+  width: 139.58333333333331%;
+}
+.fluid-layout .span_18 {
+  width: 147.91666666666666%;
+}
+.fluid-layout .span_19 {
+  width: 156.25%;
+}
+.fluid-layout .span_20 {
+  width: 164.58333333333331%;
+}
+.fluid-layout .span_21 {
+  width: 172.91666666666666%;
+}
+.fluid-layout .span_22 {
+  width: 181.25%;
+}
+.fluid-layout .span_23 {
+  width: 189.58333333333331%;
+}
+.fluid-layout .span_24 {
+  width: 197.91666666666666%;
+}
+body {
+  background: url("../images/bgnoise_lightgreen.png") repeat 0 0;
+}
+h1 {
+  font-family: 'Condiment', cursive;
+  font-size: 40px;
+  color: #095e05;
+  text-shadow: 1px 1px 3px #999;
+}
+#main {
+  width: 960px;
+  margin: 0 auto;
+}
+.row {
+  margin: 25px 0;
+}
+.span_1,
+.span_2,
+.span_3,
+.span_4,
+.span_5,
+.span_6,
+.span_7,
+.span_8,
+.span_9,
+.span_10,
+.span_11,
+.span_12,
+.span_13,
+.span_14,
+.span_15,
+.span_16,
+.span_17,
+.span_18,
+.span_20,
+.span_21,
+.span_22,
+.span_23,
+.span_24 {
+  font-family: 'Condiment', cursive;
+  min-height: 76px;
+  color: #43f280;
+  background: url("../images/bgnoise_darkgreen.png") repeat 0 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.row p {
+  padding: 15px;
+  font-size: 30px;
+  line-height: 32px;
+  text-shadow: 1px 1px 3px #095e05;
 }

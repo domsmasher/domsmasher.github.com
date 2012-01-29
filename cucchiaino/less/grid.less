@@ -2,20 +2,39 @@
 GRID SYSTEM MAGIC
 ****/
 
-.wrapper {
-	width: @wrapperWidth + @gridGutterWidth;
-	margin: 0 auto;
+// Clearfix for clearing floats like a boss h5bp.com/q
+.clearfix() {
+  zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    zoom: 1;
+  }
+  &:after {
+    clear: both;
+  }
 }
-
 .row {
-	width: @wrapperWidth;
-	margin-left: @extraSpace;
-	margin-right: @extraSpace;
+	margin-left: auto;
+	margin-right: auto;
+	width: @wrapperWidth + @gridGutterWidth;
+	.clearfix();
 }
 
 .columns(@columnNumber: 1) {
-  width: (@gridColWidth * @columnNumber) + (@gridGutterWidth * (@columnNumber - 1));
+  width: (@gridColWidth * @columnNumber) + (@gridGutterWidth * (@columnNumber - 1)) + @pixelvar;
 }
+
+.fluid-columns(@columnNumber: 1) {
+  width: (@spanFluidSpace * @columnNumber) + (@gutterFluidSpace * (@columnNumber - 1)) + @percvar;
+}
+
+/****
+
+FIXED
+
+****/
 
 .span_1,
 .span_2,
@@ -28,7 +47,18 @@ GRID SYSTEM MAGIC
 .span_9,
 .span_10,
 .span_11,
-.span_12 {
+.span_12,
+.span_13,
+.span_14,
+.span_15,
+.span_16,
+.span_17,
+.span_18,
+.span_20,
+.span_21,
+.span_22,
+.span_23,
+.span_24 {
 	display: inline;
 	float: left;
 	position: relative;
@@ -49,3 +79,91 @@ GRID SYSTEM MAGIC
 .span_10 { .columns(10); }
 .span_11 { .columns(11); }
 .span_12 { .columns(12); }
+.span_13 { .columns(13); }
+.span_14 { .columns(14); }
+.span_15 { .columns(15); }
+.span_16 { .columns(16); }
+.span_17 { .columns(17); }
+.span_18 { .columns(18); }
+.span_19 { .columns(19); }
+.span_20 { .columns(20); }
+.span_21 { .columns(21); }
+.span_22 { .columns(22); }
+.span_23 { .columns(23); }
+.span_24 { .columns(24); }
+
+/****
+
+FLUID
+
+****/
+
+.fluid-layout .span_1,
+.fluid-layout .span_2,
+.fluid-layout .span_3,
+.fluid-layout .span_4,
+.fluid-layout .span_5,
+.fluid-layout .span_6,
+.fluid-layout .span_7,
+.fluid-layout .span_8,
+.fluid-layout .span_9,
+.fluid-layout .span_10,
+.fluid-layout .span_11,
+.fluid-layout .span_12,
+.fluid-layout .span_13,
+.fluid-layout .span_14,
+.fluid-layout .span_15,
+.fluid-layout .span_16,
+.fluid-layout .span_17,
+.fluid-layout .span_18,
+.fluid-layout .span_20,
+.fluid-layout .span_21,
+.fluid-layout .span_22,
+.fluid-layout .span_23,
+.fluid-layout .span_24 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: @extraSpace;
+  margin-right: @extraSpace;
+}
+
+// Default columns
+.fluid-layout .span_1 { .fluid-columns(1); }
+.fluid-layout .span_2 { .fluid-columns(2); }
+.fluid-layout .span_3 { .fluid-columns(3); }
+.fluid-layout .span_4 { .fluid-columns(4); }
+.fluid-layout .span_5 { .fluid-columns(5); }
+.fluid-layout .span_6 { .fluid-columns(6); }
+.fluid-layout .span_7 { .fluid-columns(7); }
+.fluid-layout .span_8 { .fluid-columns(8); }
+.fluid-layout .span_9 { .fluid-columns(9); }
+.fluid-layout .span_10 { .fluid-columns(10); }
+.fluid-layout .span_11 { .fluid-columns(11); }
+.fluid-layout .span_12 { .fluid-columns(12); }
+.fluid-layout .span_13 { .fluid-columns(13); }
+.fluid-layout .span_14 { .fluid-columns(14); }
+.fluid-layout .span_15 { .fluid-columns(15); }
+.fluid-layout .span_16 { .fluid-columns(16); }
+.fluid-layout .span_17 { .fluid-columns(17); }
+.fluid-layout .span_18 { .fluid-columns(18); }
+.fluid-layout .span_19 { .fluid-columns(19); }
+.fluid-layout .span_20 { .fluid-columns(20); }
+.fluid-layout .span_21 { .fluid-columns(21); }
+.fluid-layout .span_22 { .fluid-columns(22); }
+.fluid-layout .span_23 { .fluid-columns(23); }
+.fluid-layout .span_24 { .fluid-columns(24); }
+
+// Border Radius
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+// Drop shadows
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
