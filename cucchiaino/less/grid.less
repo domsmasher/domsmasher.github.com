@@ -16,10 +16,13 @@ GRID SYSTEM MAGIC
   }
 }
 .row {
-	margin-left: auto;
-	margin-right: auto;
-	width: @wrapperWidth + @gridGutterWidth;
+	width: @wrapperWidth + @gridGutterWidth + @pixelvar;
 	.clearfix();
+}
+
+.fluid-layout .row {
+  width: 100%;
+  .clearfix();
 }
 
 .columns(@columnNumber: 1) {
