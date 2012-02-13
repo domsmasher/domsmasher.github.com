@@ -30,10 +30,6 @@
 				'click: a' : function (_, $el) {
 					var c = 0;
 
-					$el.on('click', function () {
-						console.log('click');
-					});
-
 					$.each($el, function (_, val) {
 						var d = $(this);
 		                setTimeout(function () {
