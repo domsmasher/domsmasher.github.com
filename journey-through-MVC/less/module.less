@@ -1,37 +1,56 @@
-.page{
-    min-height: 100%;
-    width: 98%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin-left: -150%;
-    position: absolute;
-    background: #000;
-    box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
-    z-index: 2;
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
+.container {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
 }
 
-.page:target{
-    margin-left: 0%;
-    background: url("@{imagePath}bg_lightgreen.png") repeat 0 0;
+.navbar {}
+
+.navbar .nav {
+	position: relative;
+	left: 0;
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
 }
 
-.content {
-	right: 40px;
-	left: 280px;
-	top: 0px;
-	position: absolute;
-	padding-bottom: 30px;
+.nav > li {
+	display: block;
+	float: left;
 }
 
-.content h1 {
-	font-size: 110px;
-	padding: 10px 0px 20px 0px;
-	margin-top: 52px;
+.navbar .nav > li > a {
+	float: none;
+	padding: 15px 21px 40px 21px;
+	line-height: 19px;
+	color: #999;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav > li > a {
+	display: block;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.navbar .nav .active > a, 
+.navbar .nav .active > a:hover,
+.navbar .nav li > a:hover {
 	color: white;
-	color: rgba(255, 255, 255, 0.9);
-	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+	background-color: #222;
+	background-color: rgba(0, 0, 0, 1);
+	-webkit-border-radius: 0 0 12px 12px;
+	-moz-border-radius: 0 0 12px 12px;
+	border-radius: 0 0 12px 12px;
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip: padding-box;
+}
+
+.js .nav > li {
+	display: none;
 }

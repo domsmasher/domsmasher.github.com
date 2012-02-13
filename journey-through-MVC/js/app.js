@@ -1,25 +1,26 @@
 (function (window, $, undefined) {
-	var HomePage = function (pageTitle) {
+
+	document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, ' js');
+
+	/* My Application */
+	var OnePageApp = function (pageTitle) {
 		this.pageTitle = pageTitle;
 		new pHeader();
-		this.bindEvents();
 	};
 
-	HomePage.prototype = {
-		bindEvents : function () {
-			console.log(this.pageTitle);
-		}
-	};
-
+	/* The Header Object */
 	var pHeader = function (attributes, options) {
+		
 		var defaults;
 		
-		this.h = $('body').find('header');
+		/* First Header Tag in the document */
+		this.h = $('body').find('header').eq(0);
 
 		this.nav = new pNav({
 			title : 'Menu',
-			parent : this.h,
+			parent : this.h.find('.container'),
 			mId : 'mainNav',
+			classes : {},
 			section : {
 				'home': 'Home',
 				'menu1': 'Voce menu 1',
@@ -27,40 +28,20 @@
 				'menu3': 'Voce menu 3'
 			},
 			events : {
-				'click: a' : function (_, $el) {
+				'click: li' : function (_, $el) {
 					var c = 0;
-
-					$el.on('click', function () {
-						console.log('click');
-					});
 
 					$.each($el, function (_, val) {
 						var d = $(this);
-		                setTimeout(function () {
-		                    d.css('left', 0)
-		                }, 200 + c);
-		                c += 350;
+						setTimeout(function () {
+							d.fadeIn();
+						}, 200 + c);
+						c += 350;
 					});
 				}
 			}
 		});
-
-		//this.bindEvents();
 	};
-
-	pHeader.prototype = {
-		/*bindEvents : function () {
-			this.init();
-			this.render();
-		},
-		init: function () {
-			
-		},
-		render : function () {
-			this.h.append(this.nav.html);
-		}*/
-	};
-
 	var pNav = function (attributes, options) {
 		var defaults;
 
@@ -91,7 +72,7 @@
 		},
 		init: function () {
 			var nav = $('<nav></nav>'),
-				html = '<ul id="' + this.mId + '" class="menu">';
+				html = '<ul id="' + this.mId + '" class="nav">';
 			$.each(this.section, function (_, label) {
 				html += '<li><a href="#' + _ + '">' + label + '</a></li>';
 			});
@@ -104,5 +85,6 @@
 		}
 	};
 
-	new HomePage('Home page');
+	new OnePageApp('Home page');
+
 }(window, jQuery, undefined))

@@ -1,43 +1,21 @@
-#main {
-	height: 100%;
-}
-
-#mainNav {
+#header {
 	position: fixed;
-	top: 20%;
-	left: 0;
-	width: 15%;
-	z-index:3;
-}
-
-#mainNav li {
-	position: relative;
-	display: block;
-	height: 60px;
-}
-
-#mainNav a {
-	position: absolute;
+	height: 50px;
 	top: 0;
-	left: -150%;
-	width: 100%;
-    color: #444;
-    display: block;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
-    line-height: 50px;
-    padding: 0px 20px;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-    font-size: 14px;
-    text-decoration: none;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
+	left: 0;
+	right: 0;
+	background: #000;
+	z-index: 3;
+	margin-bottom: 22px;
+	background-color: #2C2C2C;
+	background-image: -moz-linear-gradient(top, #333333, #222222);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+	background-image: -webkit-linear-gradient(top, #333333, #222222);
+	background-image: -o-linear-gradient(top, #333333, #222222);
+	background-image: linear-gradient(top, #333333, #222222);
+	background-repeat: repeat-x;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 
-#mainNav a:hover {
-    background: #ddd;
 }
