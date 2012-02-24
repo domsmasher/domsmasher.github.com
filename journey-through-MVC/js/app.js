@@ -87,4 +87,8 @@
 
 	new OnePageApp('Home page');
 
-}(window, jQuery, undefined))
+}(window, jQuery, undefined));
+
+$(document).ready(function () {
+	$('section').css('min-height', $(window).height() + 'px');
+});

@@ -3,6 +3,8 @@ body {
 	font-size: 13px;
 	line-height: 18px;
 	color: #333;
-	background: url("@{imagePath}bg_sand.png") repeat 0 0;
-	overflow: hidden;
+	background-image: url("@{imagePath}noise.png"), -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 750, color-stop(0%, #d1b497), color-stop(100%, #8e6c4b));
+	background-image: url("@{imagePath}noise.png"), -moz-radial-gradient(top center, circle, #d1b497 0%, #8e6c4b 750px);
+	background-image: url("@{imagePath}noise.png"), radial-gradient(top center, circle, #d1b497 0%, #8e6c4b 750px);
+	min-height: 100%;
 }
