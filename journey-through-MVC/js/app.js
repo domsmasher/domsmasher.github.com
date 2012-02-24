@@ -71,7 +71,7 @@
 
 		},
 		init: function () {
-			var nav = $('<nav></nav>'),
+			var nav = $('<nav class="nav-collapse collapse"></nav>'),
 				html = '<ul id="' + this.mId + '" class="nav">';
 			$.each(this.section, function (_, label) {
 				html += '<li><a href="#' + _ + '">' + label + '</a></li>';

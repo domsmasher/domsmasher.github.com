@@ -17,7 +17,7 @@ body {
   background-image: url("../images/noise.png"), -webkit-linear-gradient(top, #333333, #222222);
   background-image: url("../images/noise.png"), -o-linear-gradient(top, #333333, #222222);
   background-image: url("../images/noise.png"), linear-gradient(top, #333333, #222222);
-  background-repeat: repeat-x;
+  background-repeat: repeat;
 }
 .hero-unit {
   background: none;
