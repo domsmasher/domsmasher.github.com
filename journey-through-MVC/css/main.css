@@ -62,4 +62,8 @@ body {
   .nav-collapse.collapse {
     height: 0;
   }
+  .hero-unit {
+    margin: 0;
+    padding: 0;
+  }
 }
