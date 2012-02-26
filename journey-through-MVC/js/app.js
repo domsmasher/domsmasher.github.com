@@ -23,9 +23,8 @@
 			classes : {},
 			section : {
 				'home': 'Home',
-				'ch-01': 'Chapter 01  - Layout',
-				'ch-02': 'Voce menu 2',
-				'ch-03': 'Voce menu 3'
+				'ch-01': 'Chapter 01 - Layout',
+				'ch-02': 'Chapter 02 - Pub/Sub'
 			},
 			events : {
 				'li' : function (_, $el) {
