@@ -23,12 +23,12 @@
 			classes : {},
 			section : {
 				'home': 'Home',
-				'menu1': 'Voce menu 1',
-				'menu2': 'Voce menu 2',
-				'menu3': 'Voce menu 3'
+				'ch-01': 'Chapter 01  - Layout',
+				'ch-02': 'Voce menu 2',
+				'ch-03': 'Voce menu 3'
 			},
 			events : {
-				'click: li' : function (_, $el) {
+				'li' : function (_, $el) {
 					var c = 0;
 
 					$.each($el, function (_, val) {
@@ -38,7 +38,29 @@
 						}, 200 + c);
 						c += 350;
 					});
+				},
+				'#mainNav a' : function (_, $el) {
+					$el.on('click', function () {
+						var element = $(this),
+							section = $(element.attr('href'));
+
+						element
+							.closest('nav')
+							.find('.active')
+							.removeClass('active')
+							.end()
+							.end()
+							.addClass('active');
+
+
+						console.log(section.offset().top);
+						$('html, body').animate({
+							scrollTop : section.offset().top - 60
+						}, 2000);
+						return false;
+					});
 				}
+
 			}
 		});
 	};
@@ -57,16 +79,17 @@
 
 	pNav.prototype = {
 		bindEvents : function () {
-			var namedParam    = /^([\w\s]+):([\w\s]+)$/i;
-
 			
 			this.init();
 			this.render();
 			
+			if (!this.events) {
+				return;
+			}
+
 			for (i in this.events) {
-				var ev = namedParam.exec(i);
-				
-				this.events[i].call(this, i, $(ev[2]));
+				var els = $(i) || [];
+				this.events[i].call(this, i, els);
 			}
 
 		},
