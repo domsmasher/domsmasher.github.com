@@ -23,6 +23,9 @@ p {
   font-size: 18px;
   line-height: 23px;
 }
+img.sliced {
+  margin-top: 25px;
+}
 img.pull-right {
   margin: 25px 0 25px 25px;
 }
