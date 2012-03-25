@@ -16,7 +16,6 @@
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/bootstrap-responsive.min.css">
 	<link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="../css/prettify/prettify.css" />
 	<!-- end CSS-->
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,10 +36,6 @@
 				</div>
 			</div>
 		</div>
-		<!--<div id="share">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://domsmasher.github.com/journey-through-MVC/" data-text="MVC Journey">MVC Journey</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		</div>-->
 	</header>
 
 	<div id="main" role="main">
@@ -86,6 +81,21 @@
 			</div>
 		</section>
 
+		<section id="ch-02-01">
+			<div class="container">
+				<h1>Chapter 2.1 - Pub/Sub Usage</h1>
+				<div class="row">
+					<div class="span8">
+						<p><script src="https://gist.github.com/2196831.js"> </script></p>
+					</div>
+					<div class="span4">
+						<p>Suppose to have a widget on our page that have to perform a certain task when the 'date:arrived' event as triggered.</p>
+						<p>Simply subscribe the event and then publish web the day was clicked, that's it... AWESOME!!!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 	</div>
 
 	<footer  id="footer">
@@ -96,7 +106,6 @@
 <!-- JavaScript at the bottom for fast page loading -->
 <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
 <script src="./js/app.js" type="text/javascript"></script>
-<script src="../js/prettify/prettify.js" type="text/javascript"></script>
 <script src="./js/bootstrap-collapse.js" type="text/javascript"></script>
 </body>
 </html>
