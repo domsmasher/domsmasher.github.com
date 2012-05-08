@@ -1,0 +1,154 @@
+@import "normalize.css";
+@font-face {
+  font-family: 'FORQUERegular';
+  src: url('../fonts/webfontkit-20120506-051804/forque-webfont.eot');
+  src: url('../fonts/webfontkit-20120506-051804/forque-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/webfontkit-20120506-051804/forque-webfont.woff') format('woff'), url('../fonts/webfontkit-20120506-051804/forque-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MadisonSquareIncised';
+  src: url('../fonts/webfontkit-20120506-051857/madisi__-webfont.eot');
+  src: url('../fonts/webfontkit-20120506-051857/madisi__-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/webfontkit-20120506-051857/madisi__-webfont.woff') format('woff'), url('../fonts/webfontkit-20120506-051857/madisi__-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RapscallionRegular';
+  src: url('../fonts/webfontkit-20120506-051857/rapscall-webfont.eot');
+  src: url('../fonts/webfontkit-20120506-051857/rapscall-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/webfontkit-20120506-051857/rapscall-webfont.woff') format('woff'), url('../fonts/webfontkit-20120506-051857/rapscall-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CopseRegular';
+  src: url('../fonts/webfontkit-20120506-065006/copse-regular-webfont.eot');
+  src: url('../fonts/webfontkit-20120506-065006/copse-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/webfontkit-20120506-065006/copse-regular-webfont.woff') format('woff'), url('../fonts/webfontkit-20120506-065006/copse-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JosefinSlabLight';
+  src: url('../fonts/webfontkit-20120506-064856/josefinslab-light-webfont.eot');
+  src: url('../fonts/webfontkit-20120506-064856/josefinslab-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/webfontkit-20120506-064856/josefinslab-light-webfont.woff') format('woff'), url('../fonts/webfontkit-20120506-064856/josefinslab-light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JosefinSlabRegular';
+  src: url('../fonts/webfontkit-20120506-064856/josefinslab-regular-webfont.eot');
+  src: url('../fonts/webfontkit-20120506-064856/josefinslab-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/webfontkit-20120506-064856/josefinslab-regular-webfont.woff') format('woff'), url('../fonts/webfontkit-20120506-064856/josefinslab-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JosefinSlabSemiBold';
+  src: url('../fonts/webfontkit-20120506-064856/josefinslab-semibold-webfont.eot');
+  src: url('../fonts/webfontkit-20120506-064856/josefinslab-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/webfontkit-20120506-064856/josefinslab-semibold-webfont.woff') format('woff'), url('../fonts/webfontkit-20120506-064856/josefinslab-semibold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SeasideResortNFRegular';
+  src: url('../fonts/webfontkit-20120508-131742/seasrn__-webfont.eot');
+  src: url('../fonts/webfontkit-20120508-131742/seasrn__-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/webfontkit-20120508-131742/seasrn__-webfont.woff') format('woff'), url('../fonts/webfontkit-20120508-131742/seasrn__-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: url("../images/brns0vp.png") repeat 0 0;
+}
+h1 {
+  font-weight: normal;
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/pattern.png") repeat-x 50% 0;
+  -moz-box-shadow: 0px 2px 15px #000;
+  -webkit-box-shadow: 0px 15px 5px #000;
+  box-shadow: 0px 2px 15px #000;
+}
+#footer {
+  background: url("../images/pattern.png") repeat-x 50% 0;
+}
+#main {
+  padding: 80px;
+}
+.index2 {
+  background: url("../images/scribble_light.jpg") repeat 0 0;
+}
+.index2 #header {
+  background: url("../images/flowertrail1.jpg") repeat 50% 0;
+}
+.index2 #footer {
+  background: url("../images/flowertrail1.jpg") repeat 50% 0;
+}
+.index3 {
+  background: url("../images/scribble_light.jpg") repeat 0 0;
+}
+.index3 #header {
+  background: url("../images/flowertrail2.jpg") repeat 50% 0;
+}
+.index3 #footer {
+  background: url("../images/flowertrail2.jpg") repeat 50% 0;
+}
+.index4 {
+  color: #fff;
+  background: url("../images/cartographer.png") repeat 0 0;
+}
+.index4 #header {
+  background: url("../images/gplaypattern1.jpg") repeat 50% 0;
+}
+.index4 #footer {
+  background: url("../images/gplaypattern1.jpg") repeat 50% 0;
+}
+.index5 {
+  color: #fff;
+  background: url("../images/cartographer.png") repeat 0 0;
+}
+.index5 #header {
+  background: url("../images/gplaypattern2.jpg") repeat 50% 0;
+}
+.index5 #footer {
+  background: url("../images/gplaypattern2.jpg") repeat 50% 0;
+}
+.index6 {
+  color: #fff;
+  background: url("../images/gplaypattern1.jpg") repeat 0 0;
+}
+.index6 #header {
+  background: url("../images/cartographer.png") repeat 50% 0;
+}
+.index6 #footer {
+  background: url("../images/cartographer.png") repeat 50% 0;
+}
+.index7 {
+  color: #fff;
+  background: url("../images/gplaypattern2.jpg") repeat 0 0;
+}
+.index7 #header {
+  background: url("../images/cartographer.png") repeat 50% 0;
+}
+.index7 #footer {
+  background: url("../images/cartographer.png") repeat 50% 0;
+}
+/* Contain floats: h5bp.com/q */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
